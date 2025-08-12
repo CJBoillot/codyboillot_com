@@ -147,12 +147,6 @@ function Home() {
               <p className="subtitle">Team Builder & Mentor</p>
             </div>
             
-            <p className="hero-description">
-              Creating innovative solutions that drive business impact while leading high-performing engineering teams. 
-              10+ years delivering enterprise-scale systems, achieving 90%+ retention rates, and eliminating millions 
-              in waste through strategic technical leadership and data-driven workforce planning.
-            </p>
-            
             <div className="cta-buttons">
               <button 
                 className="cta-primary" 
@@ -163,12 +157,25 @@ function Home() {
               </button>
               <button 
                 className="cta-secondary"
+                onClick={() => navigate('/military')}
+                aria-label="View military service experience"
+              >
+                Military Service
+              </button>
+              <button 
+                className="cta-secondary"
                 onClick={() => navigate('/contact')}
                 aria-label="Contact for leadership opportunities"
               >
                 Discuss Opportunities
               </button>
             </div>
+            
+            <p className="hero-description">
+              Creating innovative solutions that drive business impact while leading high-performing engineering teams. 
+              10+ years delivering enterprise-scale systems, achieving 90%+ retention rates, and eliminating millions 
+              in waste through strategic technical leadership and data-driven workforce planning.
+            </p>
           </div>
         </div>
         
@@ -273,7 +280,7 @@ function Home() {
               <p>Led cross-functional teams delivering workforce development solutions under budget and on schedule</p>
             </div>
             
-            <div className="highlight-item">
+            <div className="highlight-item clickable" onClick={() => navigate('/military')}>
               <h3>Military Leadership Foundation</h3>
               <p>Combat Sergeant & Aviator experience in high-pressure environments builds resilience and strategic thinking</p>
             </div>
